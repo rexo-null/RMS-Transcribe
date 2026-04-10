@@ -1,0 +1,115 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.sublime-*
+
+# Application Data (DO NOT COMMIT)
+models/           # ML models - too large, auto-downloaded
+results/          # Transcription outputs
+.env              # Secrets and config
+*.log
+logs/
+
+# Build Artifacts
+build/dist/
+build/work/
+release/          # Release packages
+releases/         # Manual release builds
+production/       # Old build artifacts - DO NOT COMMIT
+production/dist/
+production/build/
+production/packages/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temp
+tmp/
+temp/
+*.tmp
+
+# Audio files (test files)
+*.mp3
+*.wav
+*.ogg
+*.m4a
+*.flac
+!docs/examples/*.mp3  # Keep example files in docs if any
+!docs/examples/*.wav  # Keep example files in docs if any
+!docs/examples/*.ogg  # Keep example files in docs if any
+!docs/examples/*.m4a  # Keep example files in docs if any
+!docs/examples/*.flac  # Keep example files in docs if any
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+
+# ML Models
+*.bin
+*.pt
+*.pth
+*.onnx
+*.safetensors
+
+# Node (if any web components)
+node_modules/
+
+# Specific temp file
+/037609BD7F4349DE.1775483561.6019589.mp3
+
+# Development workspace (build artifacts, releases, temp files)
+dev/
+
+# Source directory runtime data (models downloaded during testing)
+source/models/
+source/results/
+source/logs/
+source/*.log
+source/src/models/
+source/src/results/
+source/src/logs/
+
+# Test audio files in source
+source/*.mp3
+source/*.wav
+source/*.ogg
+source/*.m4a
+source/*.flac
+
+# Cache and temp in source
+source/__pycache__/
+source/.pytest_cache/
+source/.mypy_cache/
+
+# Local env files (keep example only)
+source/.env
+source/src/.env
+!source/.env.example
