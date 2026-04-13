@@ -1,0 +1,41 @@
+# Build artifacts
+dev/output/
+dev/infrastructure/
+build/
+dist/
+*.pyc
+__pycache__/
+*.pyd
+*.dll
+*.so
+*.dylib
+
+# Python
+*.egg-info/
+.eggs/
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.venv/
+venv/
+ENV/
+
+# Models (large files, should be downloaded separately)
+*.bin
+*.safetensors
+models/
